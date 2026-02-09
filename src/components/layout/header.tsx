@@ -54,13 +54,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex">
-          <Link href="/contactos">
-            <Button variant="primary" className="bg-indigo-950 text-white hover:bg-indigo-900">
-              Cotizar
-            </Button>
-          </Link>
-        </div>
+
 
         {/* Mobile Toggle */}
         <button
@@ -94,9 +88,7 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <Link href="/contactos" onClick={() => setIsOpen(false)}>
-                <Button className="w-full bg-indigo-950 text-white">Cotizar</Button>
-              </Link>
+
             </nav>
           </motion.div>
         )}
