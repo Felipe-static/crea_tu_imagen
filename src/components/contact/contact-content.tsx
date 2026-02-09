@@ -1,136 +1,106 @@
 'use client';
 
 import { Container } from '@/components/ui/container';
-import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function ContactContent() {
   return (
-    <div className="min-h-screen bg-stone-50 pt-24 pb-12">
+    <div className="min-h-screen bg-slate-50 pt-24 pb-16">
       <Container>
-        <div className="grid gap-12 lg:grid-cols-2">
-          
-          {/* Info Side */}
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="space-y-8"
+        {/* Header Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
+          <h1 className="text-4xl font-bold text-indigo-950 md:text-5xl font-serif mb-6 uppercase tracking-wide">
+            Contacto
+          </h1>
+          <div className="h-1 w-24 bg-indigo-600 mx-auto rounded-full opacity-60 mb-8" />
+          <p className="text-xl text-slate-600 leading-relaxed">
+            Estamos listos para atender sus requerimientos. <br />
+            Contáctenos directamente a través de nuestros canales oficiales para una atención personalizada y rápida.
+          </p>
+        </motion.div>
+
+        {/* Contact Cards Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+
+          {/* WhatsApp / Phone Card */}
+          <motion.a
+            href="https://wa.me/56993194568"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col items-center text-center"
           >
-            <div>
-              <h1 className="text-4xl font-bold text-stone-900 mb-4 md:text-5xl font-serif">Hablemos de Excelencia</h1>
-              <p className="text-xl text-stone-600">
-                Estamos aquí para ayudarle a encontrar la manera perfecta de honrar a quienes hacen grande a su organización.
-              </p>
+            <div className="mb-6 rounded-full bg-green-50 p-4 transition-colors group-hover:bg-green-100">
+              <MessageCircle className="h-10 w-10 text-green-600" />
             </div>
+            <h3 className="text-xl font-bold text-indigo-950 mb-2">WhatsApp Directo</h3>
+            <p className="text-slate-500 mb-6">Chatea con nosotros para cotizaciones rápidas.</p>
+            <span className="text-lg font-semibold text-green-700 group-hover:underline">
+              +56 9 9319 4568
+            </span>
+          </motion.a>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4 rounded-xl bg-white p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="rounded-full bg-stone-100 p-3 text-stone-900">
-                  <Mail className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-stone-900">Correo Electrónico</h3>
-                  <p className="text-stone-600">info@crea-imagen.cl</p>
-                  <p className="text-sm text-stone-500 mt-1">Respondemos en menos de 24 horas.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 rounded-xl bg-white p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="rounded-full bg-stone-100 p-3 text-stone-900">
-                  <Phone className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-stone-900">Teléfono / WhatsApp</h3>
-                  <p className="text-stone-600">+56 9 1234 5678</p>
-                  <p className="text-sm text-stone-500 mt-1">Lunes a Viernes, 9:00 - 18:00 hrs.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 rounded-xl bg-white p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-                <div className="rounded-full bg-stone-100 p-3 text-stone-900">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-stone-900">Showroom & Taller</h3>
-                  <p className="text-stone-600">Av. Providencia 1234, Of. 601</p>
-                  <p className="text-stone-600">Santiago, Chile</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Form Side */}
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="rounded-2xl bg-white p-8 md:p-10 shadow-xl border border-stone-100"
+          {/* Email Card */}
+          <motion.a
+            href="mailto:info@crea-imagen.cl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col items-center text-center"
           >
-            <h2 className="text-2xl font-bold text-stone-900 mb-6">Envíenos un mensaje</h2>
-            <form className="space-y-6">
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-stone-700">Nombre</label>
-                  <input 
-                    id="name"
-                    type="text" 
-                    placeholder="Juan Pérez"
-                    className="w-full rounded-md border border-stone-300 px-4 py-2 text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900" 
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="company" className="text-sm font-medium text-stone-700">Empresa</label>
-                  <input 
-                    id="company"
-                    type="text" 
-                    placeholder="Su Empresa SpA"
-                    className="w-full rounded-md border border-stone-300 px-4 py-2 text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900" 
-                  />
-                </div>
-              </div>
+            <div className="mb-6 rounded-full bg-indigo-50 p-4 transition-colors group-hover:bg-indigo-100">
+              <Mail className="h-10 w-10 text-indigo-600" />
+            </div>
+            <h3 className="text-xl font-bold text-indigo-950 mb-2">Correo Electrónico</h3>
+            <p className="text-slate-500 mb-6">Para detalles técnicos y archivos adjuntos.</p>
+            <span className="text-lg font-semibold text-indigo-800 group-hover:underline">
+              info@crea-imagen.cl
+            </span>
+          </motion.a>
 
-              <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium text-stone-700">Email Corporativo</label>
-                <input 
-                  id="email"
-                  type="email" 
-                  placeholder="juan@empresa.com"
-                  className="w-full rounded-md border border-stone-300 px-4 py-2 text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900" 
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-stone-700">¿Qué desea reconocer?</label>
-                <textarea 
-                  id="message"
-                  rows={4} 
-                  placeholder="Cuéntenos sobre el evento, la cantidad de personas o el tipo de reconocimiento que tiene en mente..."
-                  className="w-full resize-none rounded-md border border-stone-300 px-4 py-2 text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-900" 
-                />
-              </div>
-
-              <Button size="lg" className="w-full justify-between bg-stone-900 text-white hover:bg-stone-800">
-                <span>Enviar Solicitud</span>
-                <Send className="h-4 w-4" />
-              </Button>
-            </form>
+          {/* Location Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col items-center text-center"
+          >
+            <div className="mb-6 rounded-full bg-slate-100 p-4 transition-colors group-hover:bg-slate-200">
+              <MapPin className="h-10 w-10 text-slate-700" />
+            </div>
+            <h3 className="text-xl font-bold text-indigo-950 mb-2">Ubicación</h3>
+            <p className="text-slate-500 mb-2">Av. Alemania 5600, Piso 1</p>
+            <p className="text-indigo-950 font-semibold">Valparaíso, Chile</p>
           </motion.div>
 
         </div>
 
-        {/* Map Placeholder */}
-        <div className="mt-20 h-[400px] w-full overflow-hidden rounded-xl border border-stone-200 bg-stone-100 relative group">
-             {/* Google Map Iframe would go here. Using a static creative placeholder for now. */}
-             <div className="absolute inset-0 bg-stone-200 opacity-50 grayscale transition-all group-hover:grayscale-0" />
-             <div className="absolute inset-0 flex items-center justify-center">
-                 <div className="bg-white p-4 rounded-lg border border-stone-200 shadow-xl text-center">
-                     <MapPin className="h-8 w-8 text-stone-900 mx-auto mb-2" />
-                     <p className="text-stone-900 font-semibold">Ubícanos en el corazón de Providencia</p>
-                 </div>
-             </div>
-        </div>
+        {/* Additional Info / Schedule */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="bg-indigo-950 text-indigo-100 rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto"
+        >
+          <div className="flex flex-col items-center justify-center gap-4">
+            <Clock className="w-8 h-8 text-indigo-400" />
+            <h3 className="text-2xl font-serif text-white">Horario de Atención</h3>
+            <p className="text-lg">
+              Lunes a Viernes: <span className="text-white font-medium">9:00 - 18:00 hrs</span>
+            </p>
+            <p className="max-w-xl mx-auto text-indigo-200 mt-2">
+              Realizamos envíos a todo Chile. Contáctenos para coordinar la entrega de sus reconocimientos y galardones.
+            </p>
+          </div>
+        </motion.div>
+
       </Container>
     </div>
   );

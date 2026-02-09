@@ -2,34 +2,34 @@
 
 @layer base {
   :root {
-    /* Luxury Corporate Light Theme - Warm & Human */
-    --background: 40 20% 97%; /* Stone-50 warm white */
-    --foreground: 24 10% 10%; /* Warm Charcoal */
+    /* Corporate Cool Theme - Professional & Modern */
+    --background: 210 40% 98%; /* Slate-50 cool white */
+    --foreground: 222 47% 11%; /* Slate-900 */
 
     --card: 0 0% 100%;
-    --card-foreground: 24 10% 10%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 24 10% 10%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 35 100% 38%; /* classic bronze/gold */
-    --primary-foreground: 0 0% 98%;
+    --primary: 244 44% 29%; /* Brand Deep Indigo/Purple */
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 40 20% 94%; /* Stone-100 */
-    --secondary-foreground: 24 10% 10%;
+    --secondary: 239 84% 67%; /* Lighter Periwinkle/Blue from dots */
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 40 20% 90%;
-    --muted-foreground: 25 5% 45%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 35 30% 96%; /* Very light warmth */
-    --accent-foreground: 24 10% 10%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 40 10% 88%;
-    --input: 40 10% 88%;
-    --ring: 35 100% 38%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 244 44% 29%;
 
     --radius: 0.5rem;
   }
@@ -86,14 +86,14 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-stone-100;
+  @apply bg-slate-100;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-stone-300 rounded-full hover:bg-stone-400;
+  @apply bg-indigo-300 rounded-full hover:bg-indigo-400;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-800;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 via-purple-600 to-indigo-800;
 }
 
 .glass-panel {
