@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
@@ -10,11 +11,12 @@ import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
-  { label: 'Inicio', href: '/' },
-  { label: 'Productos', href: '/productos' },
-  { label: 'Galería', href: '/galeria' },
-  { label: 'Nosotros', href: '/nosotros' },
-  { label: 'Contacto', href: '/contacto' },
+  { label: 'HOME', href: '/' },
+  { label: 'LLAVEROS', href: '/llaveros' },
+  { label: 'PISAPAPELES', href: '/pisapapeles' },
+  { label: 'GALVANOS Y GALARDONES', href: '/galvanos-y-galardones' },
+  { label: 'TESTIMONIALES', href: '/testimoniales' },
+  { label: 'CONTACTO', href: '/contacto' },
 ];
 
 export function Header() {
@@ -22,12 +24,18 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-stone-100">
+    <header className="fixed top-0 z-50 w-full transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-100">
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-           {/* Logo placeholder - lighter theme */}
-           <div className="h-8 w-8 bg-stone-900 rounded-sm" />
-           <span className="text-xl font-bold tracking-tighter text-stone-900">CREA IMAGEN</span>
+          <div className="relative h-16 w-64">
+            <Image
+              src="/logo.png"
+              alt="Crea Imagen Logo"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -37,8 +45,8 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-amber-700',
-                pathname === item.href ? 'text-stone-900 font-semibold' : 'text-stone-500'
+                'text-sm font-medium transition-colors hover:text-indigo-600',
+                pathname === item.href ? 'text-indigo-950 font-semibold' : 'text-slate-500'
               )}
             >
               {item.label}
@@ -47,8 +55,8 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex">
-          <Link href="/contacto">
-            <Button variant="primary" className="bg-stone-900 text-white hover:bg-stone-800">
+          <Link href="/contactos">
+            <Button variant="primary" className="bg-indigo-950 text-white hover:bg-indigo-900">
               Cotizar
             </Button>
           </Link>
@@ -56,7 +64,7 @@ export function Header() {
 
         {/* Mobile Toggle */}
         <button
-          className="text-stone-900 md:hidden"
+          className="text-slate-900 md:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
@@ -70,7 +78,7 @@ export function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute left-0 top-20 w-full border-b border-stone-200 bg-white p-4 shadow-xl md:hidden"
+            className="absolute left-0 top-20 w-full border-b border-slate-200 bg-white p-4 shadow-xl md:hidden"
           >
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
@@ -78,16 +86,16 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    'text-lg font-medium transition-colors hover:text-stone-900',
-                    pathname === item.href ? 'text-stone-900' : 'text-stone-500'
+                    'text-lg font-medium transition-colors hover:text-indigo-950',
+                    pathname === item.href ? 'text-indigo-950' : 'text-slate-500'
                   )}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <Link href="/contacto" onClick={() => setIsOpen(false)}>
-                <Button className="w-full bg-stone-900 text-white">Cotizar</Button>
+              <Link href="/contactos" onClick={() => setIsOpen(false)}>
+                <Button className="w-full bg-indigo-950 text-white">Cotizar</Button>
               </Link>
             </nav>
           </motion.div>
