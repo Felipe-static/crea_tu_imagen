@@ -28,7 +28,7 @@ export default function Home() {
                   Descargue nuestro Catálogo Completo
                 </h2>
                 <p className="text-indigo-200 text-lg max-w-xl">
-                  Explore nuestra colección completa de galvanos, trofeos y reconocimientos con todos los detalles técnicos y opciones de personalización.
+                  Explore nuestra colección completa de galvanos, pisapapeles, llaveros de cristal, trofeos y reconocimientos con todos los detalles técnicos y opciones de personalización.
                 </p>
               </div>
 

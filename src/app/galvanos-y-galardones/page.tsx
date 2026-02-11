@@ -5,8 +5,8 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata: Metadata = {
-    title: 'Galvanos y Galardones | Crea Imagen',
-    description: 'Elegancia clásica en madera y metal para distinciones formales.',
+    title: 'Galvanos y Galardones de Cristal | Crea Imagen',
+    description: 'Elegancia clásica en cristal para distinciones formales.',
 };
 
 export default function GalvanosPage() {
@@ -27,7 +27,7 @@ export default function GalvanosPage() {
             <Container>
                 <div className="mb-12 text-center">
                     <h1 className="text-4xl font-bold text-stone-900 md:text-5xl font-serif mb-4 uppercase tracking-wide">
-                        GALVANOS Y GALARDONES
+                        GALVANOS Y GALARDONES DE CRISTAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
                 </div>

@@ -5,19 +5,19 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata: Metadata = {
-    title: 'Pisapapeles de Cristal | Crea Imagen',
-    description: 'Funcionalidad y arte en cristal óptico.',
+    title: 'Pines y Piochas Metálicas | Crea Imagen',
+    description: 'Insignias y piochas metálicas de alta calidad para eventos y distinciones.',
 };
 
-export default function PisapapelesPage() {
-    const directoryPath = path.join(process.cwd(), 'public/images/pisapapeles');
+export default function PinesYPiochasPage() {
+    const directoryPath = path.join(process.cwd(), 'public/images/pines-y-piochas');
     let images: string[] = [];
 
     try {
         const files = fs.readdirSync(directoryPath);
         images = files
             .filter((file) => /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))
-            .map((file) => `/images/pisapapeles/${file}`);
+            .map((file) => `/images/pines-y-piochas/${file}`);
     } catch (error) {
         console.error('Error reading images directory:', error);
     }
@@ -27,7 +27,7 @@ export default function PisapapelesPage() {
             <Container>
                 <div className="mb-12 text-center">
                     <h1 className="text-4xl font-bold text-stone-900 md:text-5xl font-serif mb-4 uppercase tracking-wide">
-                        PISAPAPELES DE CRISTAL
+                        PINES Y PIOCHAS METÁLICAS
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
                 </div>

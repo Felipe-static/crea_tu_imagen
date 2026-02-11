@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Crea Imagen"
   },
   description: "Obsequios corporativos de alta distinción. Reconocimientos en cristal 3D y metal grabado láser. Fabricación premium en Chile y Latinoamérica.",
-  keywords: ["cristal 3d", "reconocimientos", "galvanos", "regalos corporativos", "grabado laser", "trofeos", "chile"],
+  keywords: ["cristal 3d", "reconocimientos", "galvanos de cristal", "pisapapeles de cristal", "llaveros de cristal", "regalos corporativos", "grabado laser", "trofeos", "chile"],
   authors: [{ name: "Crea Imagen" }],
   openGraph: {
     type: "website",

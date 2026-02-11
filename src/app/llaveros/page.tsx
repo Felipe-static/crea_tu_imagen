@@ -5,8 +5,8 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata: Metadata = {
-    title: 'Llaveros | Crea Imagen',
-    description: 'Detalles corporativos portables de alta gama.',
+    title: 'Llaveros de Cristal | Crea Imagen',
+    description: 'Detalles corporativos portables de alta gama en cristal.',
 };
 
 export default function LlaverosPage() {
@@ -28,7 +28,7 @@ export default function LlaverosPage() {
             <Container>
                 <div className="mb-12 text-center">
                     <h1 className="text-4xl font-bold text-stone-900 md:text-5xl font-serif mb-4 uppercase tracking-wide">
-                        LLAVEROS
+                        LLAVEROS DE CRISTAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
                 </div>
