@@ -10,25 +10,32 @@ import { cn } from '@/lib/utils';
 
 const slides = [
     {
-        title: 'LLAVEROS',
+        title: 'LLAVEROS DE CRISTAL',
         subtitle: 'Cristales artísticos y grabados en 3D alta calidad y precisión.',
-        buttonText: 'Ver Llaveros',
+        buttonText: 'Ver Llaveros de Cristal',
         image: '/llaveros.jpg',
         href: '/llaveros',
     },
     {
-        title: 'PISA PAPELES',
+        title: 'PISAPAPELES DE CRISTAL',
         subtitle: 'Trofeos y regalos a la medida únicos y personalizados para su empresa.',
-        buttonText: 'Ver Pisapapeles',
+        buttonText: 'Ver Pisapapeles de Cristal',
         image: '/pisapapeles.jpg',
         href: '/pisapapeles',
     },
     {
-        title: 'GALVANOS Y GALARDONES',
+        title: 'GALVANOS Y GALARDONES DE CRISTAL',
         subtitle: 'Variedad de diseños, el único límite es la imaginación de nuestros clientes.',
-        buttonText: 'Ver Galvanos y Galardones',
+        buttonText: 'Ver Galvanos y Galardones de Cristal',
         image: '/galvanos.jpg',
         href: '/galvanos-y-galardones',
+    },
+    {
+        title: 'PINES Y PIOCHAS METÁLICAS',
+        subtitle: 'Insignias y piochas metálicas de alta calidad para eventos y distinciones.',
+        buttonText: 'Ver Pines y Piochas',
+        image: '/pines.jpg',
+        href: '/pines-y-piochas',
     },
     {
         title: 'TESTIMONIALES',

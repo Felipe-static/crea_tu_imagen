@@ -9,8 +9,8 @@ export const categories: Category[] = [
   },
   {
     id: 'galvanos',
-    name: 'Galvanos',
-    description: 'Elegancia clásica en madera y metal para distinciones formales.',
+    name: 'Galvanos de Cristal',
+    description: 'Elegancia clásica en cristal para distinciones formales.',
     image: '/images/categories/galvanos.jpg'
   },
   {
@@ -21,14 +21,14 @@ export const categories: Category[] = [
   },
   {
     id: 'pisa-papeles',
-    name: 'Pisa Papeles',
+    name: 'Pisapapeles de Cristal',
     description: 'Funcionalidad y arte en cristal óptico.',
     image: '/images/categories/pisapapeles.jpg'
   },
   {
     id: 'llaveros',
-    name: 'Llaveros',
-    description: 'Detalles corporativos portables de alta gama.',
+    name: 'Llaveros de Cristal',
+    description: 'Detalles corporativos portables de alta gama en cristal.',
     image: '/images/categories/llaveros.jpg'
   },
   {
@@ -92,8 +92,8 @@ export const products: Product[] = [
     image: '/images/products/g02.jpg',
     description: 'Líneas limpias y materiales modernos para celebrar los logros de hoy con la mirada puesta en la innovación del mañana.',
   },
-   // Reconocimientos Especiales
-   {
+  // Reconocimientos Especiales
+  {
     id: '5',
     code: 'RE-01',
     name: 'Escultura de Identidad',
