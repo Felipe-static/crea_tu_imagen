@@ -14,6 +14,7 @@ const navItems = [
   { label: 'LLAVEROS DE CRISTAL', href: '/llaveros' },
   { label: 'PISAPAPELES DE CRISTAL', href: '/pisapapeles' },
   { label: 'GALVANOS Y GALARDONES DE CRISTAL', href: '/galvanos-y-galardones' },
+  { label: 'MEDALLAS Y MONEDAS DE METAL', href: '/medallas-y-monedas' },
   { label: 'PINES Y PIOCHAS METÁLICAS', href: '/pines-y-piochas' },
   { label: 'TESTIMONIALES', href: '/testimoniales' },
   { label: 'CONTACTO', href: '/contacto' },

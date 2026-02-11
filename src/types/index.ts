@@ -1,10 +1,10 @@
-export type CategoryId = 
+export type CategoryId =
   | 'testimoniales'
   | 'galvanos'
   | 'reconocimientos-especiales'
   | 'pisa-papeles'
   | 'llaveros'
-  | 'medallones'
+  | 'medallas-y-monedas'
   | 'porta-medallas'
   | 'educacion'
   | 'pines';

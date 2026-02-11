@@ -32,10 +32,10 @@ export const categories: Category[] = [
     image: '/images/categories/llaveros.jpg'
   },
   {
-    id: 'medallones',
-    name: 'Medallones',
+    id: 'medallas-y-monedas',
+    name: 'Medallas y Monedas de Metal',
     description: 'Símbolos de honor en metal fundido y acabado premium.',
-    image: '/images/categories/medallones.jpg'
+    image: '/images/medallas-y-monedas/medallon 1.jpg'
   },
   {
     id: 'porta-medallas',
@@ -119,12 +119,12 @@ export const products: Product[] = [
     image: '/images/products/ll01.jpg',
     description: 'Lleve el orgullo de pertenencia a todas partes. La iluminación LED interna resalta el logo corporativo con un toque de magia.',
   },
-  // Medallones
+  // Medallas y Monedas
   {
     id: '8',
     code: 'M-01',
     name: 'Medalla Mérito Fundido',
-    category: 'medallones',
+    category: 'medallas-y-monedas',
     image: '/images/products/m01.jpg',
     description: 'El peso de la historia en la palma de la mano. Bronce fundido con relieves que narran hazañas y superación.',
   },

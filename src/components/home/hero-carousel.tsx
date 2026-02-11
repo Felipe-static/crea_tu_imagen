@@ -31,6 +31,13 @@ const slides = [
         href: '/galvanos-y-galardones',
     },
     {
+        title: 'MEDALLAS Y MONEDAS DE METAL',
+        subtitle: 'Símbolos de honor en metal fundido y acabado premium.',
+        buttonText: 'Ver Medallas y Monedas',
+        image: '/medallas.jpg',
+        href: '/medallas-y-monedas',
+    },
+    {
         title: 'PINES Y PIOCHAS METÁLICAS',
         subtitle: 'Insignias y piochas metálicas de alta calidad para eventos y distinciones.',
         buttonText: 'Ver Pines y Piochas',
