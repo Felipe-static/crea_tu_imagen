@@ -74,7 +74,9 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Mobile/Tablet/Laptop Toggle */}
+
+
+        {/* Mobile Toggle */}
         <button
           className="xl:hidden p-2 text-slate-800 hover:bg-slate-100 rounded-full transition-colors"
           onClick={() => setIsOpen(!isOpen)}
@@ -109,6 +111,7 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+
             </nav>
           </motion.div>
         )}
