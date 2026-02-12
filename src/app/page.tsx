@@ -22,13 +22,13 @@ export default function Home() {
               <div className="space-y-4 text-center md:text-left max-w-2xl">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-900/50 text-indigo-100 text-sm font-medium backdrop-blur-sm mb-2 border border-indigo-700">
                   <FileText className="w-4 h-4" />
-                  <span>Catálogo Digital 2026</span>
+                  <span>Catálogo Digital</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold font-serif leading-tight">
-                  Descargue nuestro Catálogo Completo
+                <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                  Descarga Catálogo
                 </h2>
                 <p className="text-indigo-200 text-lg max-w-xl">
-                  Explore nuestra colección completa de galvanos, pisapapeles, llaveros de cristal, trofeos y reconocimientos con todos los detalles técnicos y opciones de personalización.
+                  Cada reconocimiento cuenta una historia. Descubra nuestra colección de galvanos, medallones, pines y distinciones diseñadas para emocionar, honrar trayectorias y transformar logros en recuerdos que perduran para siempre.
                 </p>
               </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
         <Container>
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold font-serif text-white">Contáctenos</h2>
+              <h2 className="text-2xl font-bold text-white">Contáctenos</h2>
               <div className="flex flex-col gap-2 text-slate-300">
                 <div className="flex items-center justify-center md:justify-start gap-3">
                   <MapPin className="h-5 w-5 text-indigo-400" />

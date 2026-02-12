@@ -38,6 +38,20 @@ const slides = [
         href: '/medallas-y-monedas',
     },
     {
+        title: 'EDUCACIÓN',
+        subtitle: 'Distinciones académicas para licenciaturas y titulaciones.',
+        buttonText: 'Ver Educación',
+        image: '/llaveros.jpg',
+        href: '/educacion',
+    },
+    {
+        title: 'RECONOCIMIENTOS ESPECIALES',
+        subtitle: 'Diseños a medida para logros extraordinarios.',
+        buttonText: 'Ver Reconocimientos Especiales',
+        image: '/pisapapeles.jpg',
+        href: '/reconocimientos-especiales',
+    },
+    {
         title: 'PINES Y PIOCHAS METÁLICAS',
         subtitle: 'Insignias y piochas metálicas de alta calidad para eventos y distinciones.',
         buttonText: 'Ver Pines y Piochas',
@@ -67,7 +81,7 @@ export function HeroCarousel() {
     }, []);
 
     return (
-        <div className="relative h-[85vh] w-full overflow-hidden bg-black flex flex-col lg:flex-row">
+        <div className="relative h-[60vh] w-full overflow-hidden bg-black flex flex-col lg:flex-row">
 
             {/* Left Side - Fixed Isotype */}
             <div className="relative z-10 flex h-1/3 w-full flex-col items-center justify-center bg-black p-8 lg:h-full lg:w-[35%]">
@@ -115,7 +129,7 @@ export function HeroCarousel() {
                                     animate={{ x: index === current ? 0 : -30, opacity: index === current ? 1 : 0 }}
                                     transition={{ delay: 0.3, duration: 0.6 }}
                                 >
-                                    <h2 className="text-3xl font-bold text-white md:text-5xl lg:text-6xl font-serif leading-tight">
+                                    <h2 className="text-3xl font-bold text-white md:text-5xl lg:text-6xl leading-tight">
                                         {slide.title}
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-300 md:text-xl font-light">

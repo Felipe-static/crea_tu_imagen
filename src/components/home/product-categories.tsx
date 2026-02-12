@@ -10,13 +10,13 @@ import { ArrowRight } from 'lucide-react';
 export function ProductCategories() {
   return (
     <section className="bg-white py-24 md:py-32 relative overflow-hidden">
-        {/* Organic Background Shape */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-stone-100 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2 mix-blend-multiply" />
+      {/* Organic Background Shape */}
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-stone-100 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2 mix-blend-multiply" />
 
       <Container className="relative z-10">
         <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold text-stone-900 md:text-5xl font-serif">Nuestras Colecciones</h2>
+            <h2 className="text-3xl font-bold text-stone-900 md:text-4xl">Nuestras Categorías</h2>
             <p className="max-w-xl text-lg text-stone-600">
               Piezas diseñadas para ser sostenidas con orgullo y exhibidas con honor.
             </p>
@@ -40,10 +40,10 @@ export function ProductCategories() {
               >
                 {/* Image Placeholder */}
                 <div className="absolute inset-0 bg-stone-200 transition-transform duration-700 group-hover:scale-105" />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-70 transition-opacity" />
-                
+
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
                   <h3 className="text-2xl font-bold text-white mb-2">{category.name}</h3>
                   <p className="text-sm text-stone-200 line-clamp-2 opacity-90">{category.description}</p>

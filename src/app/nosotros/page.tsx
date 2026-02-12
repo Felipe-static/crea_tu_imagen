@@ -10,10 +10,10 @@ export default function NosotrosPage() {
       <section className="relative flex h-[50vh] items-center justify-center overflow-hidden bg-stone-900 text-center">
         <div className="absolute inset-0 bg-stone-900/50 z-10" />
         <Container className="relative z-20">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-bold text-white md:text-7xl font-serif"
+            className="text-5xl font-bold text-white md:text-7xl"
           >
             Nuestra Esencia
           </motion.h1>
@@ -25,7 +25,7 @@ export default function NosotrosPage() {
         <Container>
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
             <div className="space-y-8">
-              <h2 className="text-3xl font-bold text-stone-900 md:text-4xl">
+              <h2 className="text-3xl font-bold text-stone-900 md:text-4xl text-center mb-12">
                 Artesanía Digital & Tradición
               </h2>
               <div className="space-y-6 text-lg text-stone-600">
