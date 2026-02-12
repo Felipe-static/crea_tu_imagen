@@ -10,13 +10,14 @@ import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
-  { label: 'HOME', href: '/' },
   { label: 'LLAVEROS DE CRISTAL', href: '/llaveros' },
   { label: 'PISAPAPELES DE CRISTAL', href: '/pisapapeles' },
   { label: 'GALVANOS Y GALARDONES DE CRISTAL', href: '/galvanos-y-galardones' },
   { label: 'MEDALLAS Y MONEDAS DE METAL', href: '/medallas-y-monedas' },
   { label: 'PINES Y PIOCHAS METÁLICAS', href: '/pines-y-piochas' },
   { label: 'TESTIMONIALES', href: '/testimoniales' },
+  { label: 'EDUCACIÓN', href: '/educacion' },
+  { label: 'RECONOCIMIENTOS ESPECIALES', href: '/reconocimientos-especiales' },
   { label: 'CONTACTO', href: '/contacto' },
 ];
 
@@ -30,7 +31,7 @@ export function Header() {
       <Container className="flex h-24 items-center justify-between gap-4">
         {/* Logo Section */}
         <Link href="/" className="flex items-center flex-shrink-0">
-          <div className="relative h-20 w-64 md:w-80 overflow-hidden transition-all">
+          <div className="relative h-16 w-48 md:w-60 overflow-hidden transition-all">
             <Image
               src="/logo.png"
               alt="Crea Imagen Logo"
@@ -45,18 +46,18 @@ export function Header() {
         {/* Desktop/Widescreen Menu */}
         {/* Usamos 'xl' para que en laptops pequeñas (menos de 1280px) aparezca el menú hamburguesa, 
             ya que los textos son muy largos para caber en una sola fila. */}
-        <nav className="hidden xl:flex items-center justify-start gap-2 flex-1 pl-12">
+        <nav className="hidden xl:flex items-center justify-start gap-0.5 flex-1 pl-2">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={cn(
-                'group relative flex items-center justify-center h-full px-3 py-2 rounded-md transition-colors',
+                'group relative flex items-center justify-center h-full px-1.5 py-2 rounded-md transition-colors',
                 pathname === item.href ? 'text-indigo-950' : 'text-slate-500 hover:bg-slate-50'
               )}
             >
               <span className={cn(
-                "text-xs font-bold tracking-wide uppercase text-center leading-tight max-w-[120px] block transition-colors",
+                "text-[11px] font-bold tracking-tight uppercase text-center leading-tight max-w-[130px] block transition-colors",
                 pathname === item.href ? "text-indigo-950" : "text-slate-600 group-hover:text-indigo-700"
               )}>
                 {item.label}

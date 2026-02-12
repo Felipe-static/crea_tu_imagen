@@ -26,7 +26,7 @@ export default function TestimonialesPage() {
         <div className="min-h-screen bg-stone-50 pt-24 pb-16">
             <Container>
                 <div className="mb-12 text-center">
-                    <h1 className="text-4xl font-bold text-stone-900 md:text-5xl font-serif mb-4 uppercase tracking-wide">
+                    <h1 className="text-4xl font-bold text-stone-900 md:text-5xl mb-4 uppercase tracking-wide">
                         TESTIMONIALES
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />

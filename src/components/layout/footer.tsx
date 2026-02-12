@@ -10,8 +10,7 @@ export function Footer() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-indigo-950">CREA IMAGEN</h3>
           <p className="text-sm leading-relaxed">
-            Reconocimientos en cristal 3D y metal de alta distinción.
-            Calidad, precisión y elegancia para momentos inolvidables.
+            Reconocimientos diseñados para transformar momentos en legado.
           </p>
         </div>
 
@@ -36,7 +35,7 @@ export function Footer() {
             </li>
             <li className="flex items-start gap-3">
               <Phone className="h-5 w-5 shrink-0 text-indigo-600" />
-              <span>+56 9 1234 5678</span>
+              <span>+56 9 93194568</span>
             </li>
             <li className="flex items-start gap-3">
               <MapPin className="h-5 w-5 shrink-0 text-indigo-600" />
@@ -49,7 +48,7 @@ export function Footer() {
         <div className="space-y-4">
           <h4 className="text-sm font-semibold text-indigo-950">Presencia Regional</h4>
           <ul className="space-y-2 text-sm">
-            <li>Chile · Argentina · Brasil</li>
+            <li>Argentina · Chile</li>
             <li>Colombia · México</li>
           </ul>
         </div>

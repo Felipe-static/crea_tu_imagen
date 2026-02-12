@@ -14,7 +14,7 @@ export function ContactContent() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h1 className="text-4xl font-bold text-indigo-950 md:text-5xl font-serif mb-6 uppercase tracking-wide">
+          <h1 className="text-4xl font-bold text-indigo-950 md:text-5xl mb-6 uppercase tracking-wide">
             Contacto
           </h1>
           <div className="h-1 w-24 bg-indigo-600 mx-auto rounded-full opacity-60 mb-8" />
@@ -91,7 +91,7 @@ export function ContactContent() {
         >
           <div className="flex flex-col items-center justify-center gap-4">
             <Clock className="w-8 h-8 text-indigo-400" />
-            <h3 className="text-2xl font-serif text-white">Horario de Atención</h3>
+            <h3 className="text-2xl text-white">Horario de Atención</h3>
             <p className="text-lg">
               Lunes a Viernes: <span className="text-white font-medium">9:00 - 18:00 hrs</span>
             </p>
