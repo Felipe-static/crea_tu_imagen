@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "next build && cd out && zip -r ../deploy_root.zip .",
+    "deploy": "next build && cd out && zip -r ../deploy.zip .",
     "start": "next start",
     "lint": "eslint"
   },
