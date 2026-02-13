@@ -14,20 +14,20 @@ export default function Home() {
       {/* Catalog Download Section */}
       <section className="bg-slate-50 py-16 border-t border-slate-200">
         <Container>
-          <div className="bg-indigo-950 rounded-3xl p-8 md:p-12 text-white overflow-hidden relative shadow-xl">
+          <div className="bg-slate-900 rounded-3xl p-8 md:p-12 text-white overflow-hidden relative shadow-xl">
             {/* Decorative background circle */}
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="space-y-4 text-center md:text-left max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-900/50 text-indigo-100 text-sm font-medium backdrop-blur-sm mb-2 border border-indigo-700">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-slate-100 text-sm font-medium backdrop-blur-sm mb-2 border border-slate-700">
                   <FileText className="w-4 h-4" />
                   <span>Catálogo Digital</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight">
                   Descarga Catálogo
                 </h2>
-                <p className="text-indigo-200 text-lg max-w-xl">
+                <p className="text-slate-300 text-lg max-w-xl text-justify">
                   Cada reconocimiento cuenta una historia. Descubra nuestra colección de galvanos, medallones, pines y distinciones diseñadas para emocionar, honrar trayectorias y transformar logros en recuerdos que perduran para siempre.
                 </p>
               </div>
@@ -35,7 +35,7 @@ export default function Home() {
               <a
                 href="/catalogo.pdf"
                 download
-                className="group flex-shrink-0 inline-flex items-center justify-center gap-3 bg-white text-indigo-950 px-8 py-5 rounded-xl font-bold text-lg transition-all hover:bg-indigo-50 hover:scale-105 shadow-lg hover:shadow-xl"
+                className="group flex-shrink-0 inline-flex items-center justify-center gap-3 bg-white text-slate-950 px-8 py-5 rounded-xl font-bold text-lg transition-all hover:bg-slate-50 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 <Download className="w-6 h-6 text-indigo-600 transition-transform group-hover:translate-y-1" />
                 Descargar PDF

@@ -24,7 +24,7 @@ const steps = [
 
 export function ProcessTimeline() {
     return (
-        <section className="bg-white py-24 md:py-32">
+        <section className="bg-white pt-10 pb-24 md:pb-32">
             <Container>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ export function ProcessTimeline() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2, duration: 0.6 }}
-                            className="group relative flex flex-col items-center text-center bg-white"
+                            className="group relative flex flex-col items-center text-justify bg-white"
                         >
                             {/* Image Container */}
                             <div className="relative mb-8 h-[300px] w-full overflow-hidden rounded-2xl shadow-lg border border-stone-100">

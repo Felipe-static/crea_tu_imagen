@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 
 export const metadata: Metadata = {
-    title: 'Testimoniales | Crea Imagen',
+    title: 'Testimoniales de Cristal | Crea Imagen',
     description: 'Piezas únicas que perpetúan el agradecimiento y el reconocimiento.',
 };
 
@@ -27,7 +27,7 @@ export default function TestimonialesPage() {
             <Container>
                 <div className="mb-12 text-center">
                     <h1 className="text-4xl font-bold text-stone-900 md:text-5xl mb-4 uppercase tracking-wide">
-                        TESTIMONIALES
+                        TESTIMONIALES DE CRISTAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
                 </div>

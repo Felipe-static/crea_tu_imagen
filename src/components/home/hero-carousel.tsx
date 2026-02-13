@@ -10,18 +10,11 @@ import { cn } from '@/lib/utils';
 
 const slides = [
     {
-        title: 'LLAVEROS DE CRISTAL',
-        subtitle: 'Cristales artísticos y grabados en 3D alta calidad y precisión.',
-        buttonText: 'Ver Llaveros de Cristal',
-        image: '/llaveros.jpg',
-        href: '/llaveros',
-    },
-    {
-        title: 'PISAPAPELES DE CRISTAL',
-        subtitle: 'Trofeos y regalos a la medida únicos y personalizados para su empresa.',
-        buttonText: 'Ver Pisapapeles de Cristal',
-        image: '/pisapapeles.jpg',
-        href: '/pisapapeles',
+        title: 'TESTIMONIALES DE CRISTAL',
+        subtitle: 'Cristalizamos sus proyectos especiales. Una idea la podemos transformar en un delicado obsequio.',
+        buttonText: 'Ver Testimoniales',
+        image: '/testimoniales.jpg',
+        href: '/testimoniales',
     },
     {
         title: 'GALVANOS Y GALARDONES DE CRISTAL',
@@ -31,18 +24,18 @@ const slides = [
         href: '/galvanos-y-galardones',
     },
     {
-        title: 'MEDALLAS Y MONEDAS DE METAL',
-        subtitle: 'Símbolos de honor en metal fundido y acabado premium.',
-        buttonText: 'Ver Medallas y Monedas',
-        image: '/medallas.jpg',
-        href: '/medallas-y-monedas',
+        title: 'PISAPAPELES DE CRISTAL',
+        subtitle: 'Trofeos y regalos a la medida únicos y personalizados para su empresa.',
+        buttonText: 'Ver PISAPAPELES de Cristal',
+        image: '/pisapapeles.jpg',
+        href: '/pisapapeles',
     },
     {
-        title: 'EDUCACIÓN',
-        subtitle: 'Distinciones académicas para licenciaturas y titulaciones.',
-        buttonText: 'Ver Educación',
+        title: 'LLAVEROS DE CRISTAL',
+        subtitle: 'Cristales artísticos y grabados en 3D alta calidad y precisión.',
+        buttonText: 'Ver Llaveros de Cristal',
         image: '/llaveros.jpg',
-        href: '/educacion',
+        href: '/llaveros',
     },
     {
         title: 'RECONOCIMIENTOS ESPECIALES',
@@ -52,18 +45,32 @@ const slides = [
         href: '/reconocimientos-especiales',
     },
     {
-        title: 'PINES Y PIOCHAS METÁLICAS',
+        title: 'MEDALLAS Y MONEDAS DE METAL',
+        subtitle: 'Símbolos de honor en metal fundido y acabado premium.',
+        buttonText: 'Ver Medallas y Monedas',
+        image: '/medallas.jpg',
+        href: '/medallas-y-monedas',
+    },
+    {
+        title: 'LLAVEROS DE METAL',
+        subtitle: 'Llaveros metálicos de alta gama personalizados.',
+        buttonText: 'Ver Llaveros de Metal',
+        image: '/llaveros.jpg',
+        href: '/llaveros-de-metal',
+    },
+    {
+        title: 'PIOCHAS Y CONDECORACIONES DE METAL',
         subtitle: 'Insignias y piochas metálicas de alta calidad para eventos y distinciones.',
-        buttonText: 'Ver Pines y Piochas',
+        buttonText: 'Ver Piochas y Condecoraciones',
         image: '/pines.jpg',
         href: '/pines-y-piochas',
     },
     {
-        title: 'TESTIMONIALES',
-        subtitle: 'Cristalizamos sus proyectos especiales. Una idea la podemos transformar en un delicado obsequio.',
-        buttonText: 'Ver Testimoniales',
-        image: '/testimoniales.jpg',
-        href: '/testimoniales',
+        title: 'EDUCACIÓN',
+        subtitle: 'Distinciones académicas para licenciaturas y titulaciones.',
+        buttonText: 'Ver Educación',
+        image: '/llaveros.jpg',
+        href: '/educacion',
     },
 ];
 
@@ -81,7 +88,10 @@ export function HeroCarousel() {
     }, []);
 
     return (
-        <div className="relative h-[60vh] w-full overflow-hidden bg-black flex flex-col lg:flex-row">
+        <div className="relative h-[50vh] w-full overflow-hidden bg-black flex flex-col lg:flex-row">
+
+            {/* Scroll Down Indicator */}
+
 
             {/* Left Side - Fixed Isotype */}
             <div className="relative z-10 flex h-1/3 w-full flex-col items-center justify-center bg-black p-8 lg:h-full lg:w-[35%]">
@@ -129,7 +139,7 @@ export function HeroCarousel() {
                                     animate={{ x: index === current ? 0 : -30, opacity: index === current ? 1 : 0 }}
                                     transition={{ delay: 0.3, duration: 0.6 }}
                                 >
-                                    <h2 className="text-3xl font-bold text-white md:text-5xl lg:text-6xl leading-tight">
+                                    <h2 className="text-3xl font-bold text-white md:text-5xl lg:text-5xl leading-tight">
                                         {slide.title}
                                     </h2>
                                     <p className="mt-4 text-lg text-slate-300 md:text-xl font-light">
@@ -171,7 +181,7 @@ export function HeroCarousel() {
                 </div>
 
                 {/* Progress Indicators */}
-                <div className="absolute bottom-10 left-8 lg:left-16 flex gap-3 z-20">
+                <div className="absolute top-10 left-8 lg:left-16 flex gap-3 z-20">
                     {slides.map((_, idx) => (
                         <button
                             key={idx}

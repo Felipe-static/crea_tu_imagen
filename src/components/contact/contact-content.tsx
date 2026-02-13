@@ -87,13 +87,13 @@ export function ContactContent() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="bg-indigo-950 text-indigo-100 rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto"
+          className="bg-slate-900 text-indigo-100 rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto"
         >
           <div className="flex flex-col items-center justify-center gap-4">
             <Clock className="w-8 h-8 text-indigo-400" />
             <h3 className="text-2xl text-white">Horario de Atención</h3>
             <p className="text-lg">
-              Lunes a Viernes: <span className="text-white font-medium">9:00 - 18:00 hrs</span>
+              Lunes a Domingo de <span className="text-white font-medium">9:00 - 21:00 hrs</span>
             </p>
             <p className="max-w-xl mx-auto text-indigo-200 mt-2">
               Realizamos envíos a todo Chile. Contáctenos para coordinar la entrega de sus reconocimientos y galardones.

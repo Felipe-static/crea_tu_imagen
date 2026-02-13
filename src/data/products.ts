@@ -101,7 +101,7 @@ export const products: Product[] = [
     image: '/images/products/re01.jpg',
     description: 'No hay dos historias iguales. Creamos formas abstractas que materializan el ADN único de su marca o el hito específico que celebra.',
   },
-  // Pisa Papeles
+  // Pisapapeles
   {
     id: '6',
     code: 'PP-01',

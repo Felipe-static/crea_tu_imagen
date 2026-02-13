@@ -10,14 +10,15 @@ import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
-  { label: 'LLAVEROS DE CRISTAL', href: '/llaveros' },
-  { label: 'PISAPAPELES DE CRISTAL', href: '/pisapapeles' },
+  { label: 'TESTIMONIALES DE CRISTAL', href: '/testimoniales' },
   { label: 'GALVANOS Y GALARDONES DE CRISTAL', href: '/galvanos-y-galardones' },
-  { label: 'MEDALLAS Y MONEDAS DE METAL', href: '/medallas-y-monedas' },
-  { label: 'PINES Y PIOCHAS METÁLICAS', href: '/pines-y-piochas' },
-  { label: 'TESTIMONIALES', href: '/testimoniales' },
-  { label: 'EDUCACIÓN', href: '/educacion' },
+  { label: 'PISAPAPELES DE CRISTAL', href: '/pisapapeles' },
+  { label: 'LLAVEROS DE CRISTAL', href: '/llaveros' },
   { label: 'RECONOCIMIENTOS ESPECIALES', href: '/reconocimientos-especiales' },
+  { label: 'MEDALLAS Y MONEDAS DE METAL', href: '/medallas-y-monedas' },
+  { label: 'LLAVEROS DE METAL', href: '/llaveros-de-metal' },
+  { label: 'PIOCHAS Y CONDECORACIONES DE METAL', href: '/pines-y-piochas' },
+  { label: 'EDUCACIÓN', href: '/educacion' },
   { label: 'CONTACTO', href: '/contacto' },
 ];
 

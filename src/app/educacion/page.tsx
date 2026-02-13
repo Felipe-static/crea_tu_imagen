@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function EducacionPage() {
-    const directoryPath = path.join(process.cwd(), 'public/images/llaveros');
+    const directoryPath = path.join(process.cwd(), 'public/images/educacion');
     let images: string[] = [];
 
     try {
         const files = fs.readdirSync(directoryPath);
         images = files
             .filter((file) => /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))
-            .map((file) => `/images/llaveros/${file}`);
+            .map((file) => `/images/educacion/${file}`);
     } catch (error) {
         console.error('Error reading images directory:', error);
         // Directory might not exist or is empty
