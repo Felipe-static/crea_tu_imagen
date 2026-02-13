@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function EducacionPage() {
+    // Force rebuild
     const directoryPath = path.join(process.cwd(), 'public/images/educacion');
     let images: string[] = [];
 

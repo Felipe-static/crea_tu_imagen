@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function LlaverosDeMetalPage() {
+    // Force rebuild
     // Fallback to llaveros for now
     const directoryPath = path.join(process.cwd(), 'public/images/llaveros-de-metal');
     let images: string[] = [];
