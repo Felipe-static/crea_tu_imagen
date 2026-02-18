@@ -18,6 +18,7 @@ export default function EducacionPage() {
         const files = fs.readdirSync(directoryPath);
         images = files
             .filter((file) => /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))
+            .sort()
             .map((file) => `/images/educacion/${file}`);
     } catch (error) {
         console.error('Error reading images directory:', error);
