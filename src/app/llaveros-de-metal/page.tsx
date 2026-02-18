@@ -32,6 +32,9 @@ export default function LlaverosDeMetalPage() {
                         LLAVEROS DE METAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Todo comienza con un detalle que acompaña cada día. Este llavero de metal nace de la idea de transformar un objeto cotidiano en un símbolo de valor y significado. Sus finas terminaciones reflejan dedicación y cuidado en cada línea, convirtiéndolo en un recuerdo que no solo se lleva, sino que se siente. Más que un accesorio, es una pieza que representa identidad, estilo y momentos que merecen permanecer.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

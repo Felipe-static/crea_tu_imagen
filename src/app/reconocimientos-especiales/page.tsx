@@ -31,6 +31,9 @@ export default function ReconocimientosEspecialesPage() {
                         RECONOCIMIENTOS ESPECIALES
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Reconocimientos de nivel élite que combinan cristal y madera, creando piezas únicas donde diseño y simbolismo se unen. La pureza del cristal y la calidez de la madera logran un equilibrio entre innovación y tradición. Cada galardón destaca logros excepcionales con presencia y exclusividad. Más que un reconocimiento, son obras sofisticadas de alto valor estético.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

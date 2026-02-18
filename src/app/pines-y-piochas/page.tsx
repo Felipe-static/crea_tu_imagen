@@ -30,6 +30,9 @@ export default function PinesYPiochasPage() {
                         PIOCHAS Y CONDECORACIONES DE METAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Cada piocha y condecoración de metal nace de una historia de valor y compromiso. Más que un símbolo, es un recuerdo tangible de momentos que definen a quienes lo portan. La solidez del metal y los detalles cuidadosamente grabados transmiten honor, tradición y orgullo, convirtiéndolo en una pieza que se lleva en el corazón y permanece como legado para quienes lo reciben.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

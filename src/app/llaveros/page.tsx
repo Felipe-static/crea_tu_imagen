@@ -31,6 +31,9 @@ export default function LlaverosPage() {
                         LLAVEROS DE CRISTAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Un llavero de cristal que transforma una imagen especial en un recuerdo eterno gracias al grabado interno. En 2D destaca por su elegancia y precisión, mientras en 3D aporta profundidad y vida. Más que un accesorio, es un legado emocional que acompaña cada momento.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

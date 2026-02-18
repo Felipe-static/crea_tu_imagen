@@ -30,6 +30,9 @@ export default function TestimonialesPage() {
                         TESTIMONIALES DE CRISTAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Los grandes logros merecen algo más que un simple galardón. El grabado 3D encapsula la esencia del momento dentro del cristal, generando profundidad, exclusividad y un impacto emocional inmediato. No es solo un reconocimiento… es un legado visible desde cada ángulo.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

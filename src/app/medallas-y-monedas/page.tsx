@@ -31,6 +31,9 @@ export default function MedallasYMonedasPage() {
                         MEDALLAS Y MONEDAS DE METAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Cuando un reconocimiento debe reflejar verdadera excelencia, el metal es el aliado perfecto. Medallas y monedas con acabados impecables y grabados precisos transmiten prestigio, autoridad y durabilidad. Diseñadas para organizaciones que buscan destacar logros con solidez, estas piezas combinan tradición, valor estético y presencia, convirtiéndose en símbolos tangibles de liderazgo y mérito.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

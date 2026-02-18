@@ -30,6 +30,9 @@ export default function PisapapelesPage() {
                         PISAPAPELES DE CRISTAL
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Un pisa papel de cristal con grabado interno en 3D que transforma un reconocimiento en una pieza funcional y elegante para el día a día. Su diseño sin base resalta la pureza del cristal y la profundidad de la imagen, aportando modernidad y ligereza visual. Más que decorativo, combina utilidad práctica con distinción y presencia memorable.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (

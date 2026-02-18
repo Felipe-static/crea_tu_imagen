@@ -32,6 +32,9 @@ export default function EducacionPage() {
                         EDUCACIÓN
                     </h1>
                     <div className="h-1 w-24 bg-amber-700 mx-auto rounded-full opacity-60 mt-4" />
+                    <p className="text-stone-600 max-w-3xl mx-auto mt-6 text-lg leading-relaxed text-justify">
+                        “Algunos logros estudiantiles marcan un antes y un después en la vida de los alumnos. Estos merecen ser celebrados con reconocimientos que combinan cristal, madera y metal, reflejando esfuerzo, constancia y dedicación. Cada pieza transforma un logro académico en una historia tangible y emotiva. Más que un premio, es un legado que perdura y convierte cada ceremonia educativa en un recuerdo eterno.”
+                    </p>
                 </div>
 
                 {images.length > 0 ? (
