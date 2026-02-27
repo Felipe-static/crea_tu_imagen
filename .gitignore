@@ -16,7 +16,7 @@
 # next.js
 /.next/
 #out/
-
+deploy.zip
 # production
 /build
 

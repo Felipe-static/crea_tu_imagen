@@ -17,7 +17,7 @@ export default function ReconocimientosEspecialesPage() {
         const files = fs.readdirSync(directoryPath);
         images = files
             .filter((file) => /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))
-            .map((file) => `/images/pisapapeles/${file}`);
+            .map((file) => `/images/reconocimientos/${file}`);
     } catch (error) {
         console.error('Error reading images directory:', error);
         // Directory might not exist or is empty
