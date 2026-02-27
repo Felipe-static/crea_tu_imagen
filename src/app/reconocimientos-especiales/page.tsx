@@ -10,13 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function ReconocimientosEspecialesPage() {
-    const directoryPath = path.join(process.cwd(), 'public/images/pisapapeles');
+    const directoryPath = path.join(process.cwd(), 'public/images/reconocimientos');
     let images: string[] = [];
 
     try {
         const files = fs.readdirSync(directoryPath);
         images = files
             .filter((file) => /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(file))
+            .sort()
             .map((file) => `/images/reconocimientos/${file}`);
     } catch (error) {
         console.error('Error reading images directory:', error);
