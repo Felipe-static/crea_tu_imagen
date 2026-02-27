@@ -41,7 +41,7 @@ const slides = [
         title: 'RECONOCIMIENTOS ESPECIALES',
         subtitle: '',
         buttonText: 'Ver Reconocimientos Especiales',
-        image: '/pisapapeles.jpg',
+        image: '/reconocimientos.png',
         href: '/reconocimientos-especiales',
     },
     {
@@ -69,7 +69,7 @@ const slides = [
         title: 'EDUCACIÓN',
         subtitle: '',
         buttonText: 'Ver Educación',
-        image: '/llaveros.jpg',
+        image: '/educacion.jpg',
         href: '/educacion',
     },
 ];
